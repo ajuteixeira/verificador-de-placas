@@ -1,3 +1,10 @@
+document.getElementById('plate').addEventListener('keydown', function (event) {
+  if (event.key === 'Enter') {
+    checkPlate();
+  }
+});
+
+// Função pega o input, coloca as letras em maiúsculo, faz as verificações necessárias dos 3 primeiros caracteres e depois compara eles com os intervalos de placa de cada estado. No fim, exibe uma mensagem indicando o estado da placa, se é de outro estado ou se é inválida.
 function checkPlate() {
   const plate = document.getElementById('plate').value.toUpperCase();
   const msg = document.getElementById('msg');
@@ -9,6 +16,7 @@ function checkPlate() {
     return;
   }
 
+  // Pega apenas os 3 primeiros caracteres do input e armazena em uma variável
   const firstChars = plate.slice(0, 3);
 
   // Verifica se os 3 primeiros caracteres são letras
