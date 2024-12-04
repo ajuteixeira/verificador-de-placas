@@ -39,8 +39,7 @@ function checkPlate() {
   ) {
     msg.textContent = 'Mato Grosso';
     msg.style.color = 'green';
-  }
-  if (
+  } else if (
     (firstChars >= 'HQF' && firstChars <= 'HTW') ||
     (firstChars >= 'NRF' && firstChars <= 'NSD') ||
     (firstChars >= 'OOG' && firstChars <= 'OOU') ||
@@ -50,8 +49,7 @@ function checkPlate() {
   ) {
     msg.textContent = 'Mato Grosso do Sul';
     msg.style.color = 'green';
-  }
-  if (
+  } else if (
     (firstChars >= 'MVL' && firstChars <= 'MXG') ||
     (firstChars >= 'OLH' && firstChars <= 'OLN') ||
     (firstChars >= 'OYA' && firstChars <= 'OYC') ||
